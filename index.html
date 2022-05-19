@@ -21,6 +21,10 @@
         color: #737373;
     }
 
+    h3 {
+        text-align: center;
+    }
+
     p {
         margin-left:250px;
         margin-right:250px;
@@ -43,6 +47,12 @@
     <!-- Import Google Fonts from Google's Stylesheet-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400" rel="stylesheet">
+
+    <!-- MathJax plugin to render LaTex-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 
 </head>
 
@@ -69,14 +79,15 @@
         </p>
         
         <p>
-            I am a fervent believer in the concept of "open source knowledge"; science, technology, and mathematics should be enjoyed by everyone and not be sequestered away in the ivory towers of academia.
-            As such, one of my primary life goals is to be a "Math and Tech communicator" where I can take arcane symbols in mathematics and technology textbooks and transform them into easy and interesting ideas
-            for everyone to enjoy. 
+            I was a PhD student in mathematics, where I was studying Tensor-Triangulated Categories and Tensor-Triangular Geometry. Around my 3rd year, 
+            I decided leave school and pursue a career in data science and machine learning. I am a fervent believer in the concept of "open source knowledge"; 
+            science, technology, and mathematics should be enjoyed by everyone and not be sequestered away in the ivory towers of academia.
+            As such, one of my primary life goals is to be a "Math and Tech communicator" where I can take arcane symbols in mathematics and technology 
+            textbooks and transform them into easy and interesting ideas for everyone to enjoy.
         </p>
 
         <p>
-            I was a PhD student in mathematics, where I was studying Tensor-Triangulated Categories and Tensor-Triangular Geometry. Around my 3rd year, 
-            I decided leave school and pursue a career in data science and machine learning. My passion for machine learning started in 2014 after seeing what 
+            My passion for machine learning started in 2014 after seeing what 
             <a href="https://arxiv.org/abs/1406.2661"> Goodfellow et. al was able to do with GANs</a>. 
             Big data, deep learning, and advanced analytics have fascinated and mesmorized me ever since.
         </p>
@@ -110,6 +121,26 @@
 
             </ul>
         </p>
+    </div>
+
+    <div class="texExample">
+        
+        <p>
+            Here are the 2 equations that made me fall in love with mathematics: <br>
+
+                <h3 class="mathMode">
+                    \(\begin{align*}
+                        \int_1^{\infty} 2\pi\frac{1}{x} \sqrt{1+\frac{1}{x^4}} dx &= \infty \\
+                        \int_1^{\infty}\pi\frac{1}{x^2}dx &= \pi
+                    \end{align*}\)
+                </h3>
+        
+        </p>
+        
+        <p>
+            At first glance, this seems like a sequence of completely unintelligible symbols. But really what is being communicated here is something simple yet extrordinary.
+            The two equations give the Surface Area and Volume (resp.) of a solid called <a href="https://en.wikipedia.org/wiki/Gabriel%27s_horn"> <b> Gabriel's Horn </b> </a>. 
+            The equations are saying: 1) The horn has an infinite surface area and 2) The horn has a finite volume. It seems mind-bending yet mesmorizing to imagine such a geometric object.
     </div>
 </body>
 
