@@ -1,11 +1,7 @@
 /* html elements */
-div {
-    margin-bottom: 50px;
-}
-
-ul {
-    margin-left:250px;
-    margin-right:250px;
+.projects {
+    margin-left:400px;
+    margin-right:100px;
 }
 
 /* Name and bio*/
@@ -26,24 +22,24 @@ ul {
 }
 
 .bio {
-    margin-left:250px;
-    margin-right:250px;
+    margin-left:400px;
+    margin-right:100px;
     font-family: 'Poppins', sans-serif;
     text-align: justify;
 }
 
 /* Projects */
 .projectsList {
-    margin-left:250px;
-    margin-right:250px;
+    margin-left:400px;
+    margin-right:100px;
     font-family: 'Poppins', sans-serif;
     text-align: justify;
 }
 
 /* LaTex */
 .texExample {
-    margin-left:250px;
-    margin-right:250px;
+    margin-left:400px;
+    margin-right:100px;
     font-family: 'Poppins', sans-serif;
     text-align: justify;
 }
@@ -54,13 +50,39 @@ ul {
     position: fixed;
     top:0;
     left:0;
-    width:200px;
+    width:300px;
     height:100%;
     padding:20px 0;
     transition: all 0.5s ease;
 }
 
+.sidebar a{
+    color: rgb(206, 240, 253);
+    font-size:24pt;
+}
+
+.sidebar a:link{
+    text-decoration : none;
+}
+
+.sidebar a:visited{
+    text-decoration : none;
+}
+
+.sidebar ul li a:hover{
+    color:#4d4d4d;
+}
+
+.sidebar a:active{
+    text-decoration : none;
+}
+
 /* bottom bar*/
 .bottombar{
-    height:200px;
+    background: rgb(82, 82, 82);
+    margin-top: 200px;
+    right:0;
+    bottom:0;
+    height:100px;
+    width:100%;
 }
