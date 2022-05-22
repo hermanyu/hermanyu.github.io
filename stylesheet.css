@@ -50,7 +50,7 @@ ul {
 
 /* for sidebar menu on homepage */
 .sidebar{
-    background: rgb(58, 157, 214);
+    background: rgb(66, 136, 177);
     position: fixed;
     top:0;
     left:0;
@@ -58,4 +58,9 @@ ul {
     height:100%;
     padding:20px 0;
     transition: all 0.5s ease;
+}
+
+/* bottom bar*/
+.bottombar{
+    height:200px;
 }
