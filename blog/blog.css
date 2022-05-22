@@ -1,0 +1,17 @@
+.topics {
+    margin-top: 150px;
+    width:50%;
+    margin-left: auto;
+    font-family: 'Monserrat', sans-serif;
+    font-size:16pt;
+}
+
+.topics a {
+    font-family: 'Monserrat', sans-serif;
+    font-size:16pt;
+}
+
+.topics a:link{
+    text-decoration:none;
+}
+
