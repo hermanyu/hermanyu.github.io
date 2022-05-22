@@ -1,0 +1,45 @@
+div {
+    margin-bottom: 50px;
+}
+
+.name {
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    color: #4d4d4d;
+
+}
+.title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #737373;
+}
+
+.mathMode {
+    text-align: center;
+}
+
+.bio {
+    margin-left:250px;
+    margin-right:250px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.projectsList {
+    margin-left:250px;
+    margin-right:250px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+.texExample {
+    margin-left:250px;
+    margin-right:250px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+ul {
+    margin-left:250px;
+    margin-right:250px;
+}
