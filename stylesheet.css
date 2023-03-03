@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+div.flex-container {
+    display: flex;
+}
+
+.profile-picture img{
+    width: 180px;
+    padding: 10px;
+}
+
+div.profile-picture {
+    width: 200px;
+    margin-top: 25px;
+    margin-right: 10px;
+    background-color: #1877F2;
+}
+
+div.text-body{
+    margin-left: 10px;
+}
+
+div.title-labels {
+    display: flex;
+}
+
+#label-divider {
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+* {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+    font-family: Montserrat;
+}
+
+.bio {
+    width: 600px;
+}
+
+.about-me p, .what-i-do p {
+    text-align: justify;
+}
