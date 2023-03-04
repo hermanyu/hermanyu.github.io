@@ -3,21 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title>Herman Yu Personal Home Page</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="index.css">
+        <base target="_blankl">
     </head>
     <body>
         <div class="flex-container">
 
             <div class="profile-picture">
-                <img src="assets/profile_pic/pfp1.jpg">
+                <img id="picture" src="assets/profile_pic/pfp1_square.jpg" alt="Avatar">
+                <div class="links">
+                    <a id="github" href="https://github.com/hermanyu">Github</a>
+                    <a id="linkedin" href="https://www.linkedin.com/in/herman-g-yu/">LinkedIn</a>
+                    <a id="blog" href="blog.html">Blog</a>
+                </div>
             </div>
 
             <div class="text-body">
                 <div class="intro">
-                    <div class="title-name">
-                        <h1>Herman Yu</h1> 
-                    </div>
-
+                    <div id="name">Herman Yu</div> 
                     <div class="title-labels">
                             <p>Data Science</p> 
                             <p id="label-divider"> | </p> 
