@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+* {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h1 {
+    font-family: Montserrat;
+}
+
+body {
+    background-color: rgb(233, 235, 238);
+}
+
+div.flex-container {
+    display: flex;
+    padding: 20px;
+    column-gap:20px;
+}
+
+div.profile-picture {
+    border-radius: 50px 15px;
+    width: 200px;
+    /* background-color: #1877F2; */
+    background-color: white;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    row-gap:10px;
+}
+
+.profile-picture img{
+    width: 120px;
+    border: 2px solid #1877F2;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+div.links {
+    height: 100px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.links a {
+    border: 2px solid #1877F2;
+    border-radius: 5px;
+    flex: auto;
+    display: flex; /* turn anchors into flexboxes to use justify-content and align items*/
+    justify-content: center;
+    align-items: center;
+    font-size: 18pt;
+    color: white;
+    text-decoration: none;
+    background-color: #1877F2;
+    transition: box-shadow .3s;
+    float: left;
+}
+
+.links a:hover {
+    box-shadow: 0 0 10px rgba(66,66,66,.5);
+}
+
+div.text-body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+div.intro {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.intro #name {
+    font-size: 28pt;
+    font-weight: 500;
+}
+
+div.title-labels {
+    display: flex;
+    column-gap: 10px;
+}
+
+div.bio {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+div.about-me, div.what-i-do, div.education, div.projects {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.about-me p, .what-i-do p {
+    text-align: justify;
+}
