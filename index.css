@@ -16,11 +16,12 @@ body {
 div.flex-container {
     display: flex;
     padding: 20px;
-    column-gap:20px;
+    column-gap:10px;
+    justify-content: center;
 }
 
 div.profile-picture {
-    border-radius: 50px 15px;
+    border-radius: 50px 5px;
     width: 200px;
     /* background-color: #1877F2; */
     background-color: white;
@@ -70,9 +71,12 @@ div.text-body{
     row-gap: 10px;
 }
 
+div.text-body div {
+    border-radius: 5px;
+}
+
 div.intro {
     background-color: white;
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +101,6 @@ div.bio {
 
 div.about-me, div.what-i-do, div.education, div.projects {
     background-color: white;
-    border-radius: 20px;
     padding: 20px;
 }
 
