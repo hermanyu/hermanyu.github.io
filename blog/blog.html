@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog.css">
+    <base target="_blank">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="header-tabs">
+            <div class="tab statistics selected-tab">
+                <p>Statistics</p>
+            </div>
+            <div class="tab machine-learning">
+                <p>Machine Learning</p>
+            </div>
+            <div class="tab misc">
+                <p>Misc</p>
+            </div>
+        </div>
+        <div class="page-lists">
+            <div class="page-list statistics selected-list">
+                <div class="list-entry text-bubble">
+                    <a class="blog-link" href="blog-pages/statistics/data-generation-processes.html">
+                        <div class="entry-title">
+                            <p>Data Generation Processes</p>
+                        </div>
+                        <div class="entry-body">
+                            <p>
+                                At its core, data science is just a collection of tools used to obtain information from data.
+                                This blog post will discuss the concept of a data generation process (DGP) and how to generate our 
+                                own synthetic data sets. The benefits of this discussion are two-fold: 1) it establishes a concrete 
+                                framework to think about statistics and data science and 2) it provides us with the tools necessary to
+                                create toy data sets (on which we can practice our fancy data science techniques).
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-entry text-bubble">
+                    <a class="blog-link" href="blog-pages/statistics/parametric-models.html">
+                        <div class="entry-title">
+                            <p>Parametric Models</p>
+                        </div>
+                        <div class="entry-body">
+                            <p>
+                                Statistics is about using observed data to make inferences on the data generation process. 
+                                The main challenge is that infinitely many data generation processes can give rise to the same data set.
+                                In order to make the problem more tractable, one approach is to limit the range of possibilities by 
+                                assuming the DGP has some specific parametric form.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-entry text-bubble">
+                    <a class="blog-link" href="blog-pages/statistics/nonparametric-models.html">
+                        <div class="entry-title">
+                            <p>Non-parametric Models</p>
+                        </div>
+                        <div class="entry-body">
+                            <p>
+                                Sometimes, we don't need to model the entire DGP, 
+                                but just need a very specific quantity that is derived from samples of the DGP (e.g. confidence intervals and p-values).
+                                Since our observed data is itself a sample of the DGP, it is sometimes possible to get estimates of our desired quantity 
+                                without assuming any specific parameteric form for the DGP.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-entry text-bubble">
+                    <a class="blog-link" href="blog-pages/statistics/bayesian-models.html">
+                        <div class="entry-title">
+                            <p>Bayesian Models</p>
+                        </div>
+                        <div class="entry-body">
+                            <p>
+                                Often times, we will have very specific domain knowledge which places certain restrictions on what 
+                                the DGP can and cannot be. Bayesian models allow us to specify a prior distributions to encapsulate
+                                our understanding of what we consider "reasonable" beliefs about our DGPs.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+<!-- PAGE BREAK.................................................................................................................................... -->
+            <div class="page-list machine-learning">
+                <div class="list-entry text-bubble">
+                    <a class="blog-link" href="blog-pages/statistics/data-generation-processes.html">
+                        <div class="entry-title">
+                            <p>Linear and Additive Regression</p>
+                        </div>
+                        <div class="entry-body">
+                            <p>
+                                Linear are parametric regression models from statistics which can 
+                                be used to generate predictions for a quantity of interest. The main advantage of linear 
+                                models is their interpretability and easiness to compute, but they present 2 main drawbacks. 
+                                Drawback 1: they do not a priori capture non-linear behavior. Drawback 2: they do not a priori capture 
+                                interactions between predictor variables. Because of these drawbacks, the user will typically have to 
+                                manually engineer new features by creating non-linear terms and interaction terms. Drawback 1 can be 
+                                decently resolved by generalizing to Generalized Additive Models (GAMs), but there is no getting around Drawback 2.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-entry text-bubble">
+                    <a class="blog-link" href="blog-pages/statistics/parametric-models.html">
+                        <div class="entry-title">
+                            <p>Logistic Regression</p>
+                        </div>
+                        <div class="entry-body">
+                            <p>
+                                Logistic regression is really a linear regression applied to a transformed binary outcome variable. 
+                                Logistic regression is mostly used for classification tasks, which presents interesting challenges 
+                                when it comes to evaluating model performance.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-entry text-bubble">
+                    <a class="blog-link" href="blog-pages/statistics/nonparametric-models.html">
+                        <div class="entry-title">
+                            <p>Naive Bayes</p>
+                        </div>
+                        <div class="entry-body">
+                            <p>
+                                Naive Bayes is a classification technique which uses conditional group means to 
+                                determine group membership of each individual data points. If a data point X has features that 
+                                are very abnormal for group A, it stands to reason that X is not likely to be a part of group A. 
+                                Naive Bayes thus attempts to quantify how "abnormal" it is a data point to be a member of each group. 
+                                This "abnormal"-ness is computed using Bayes theorem and by making a "naive" assumption that 
+                                the input features are all independent from each other (hence the name: Naive Bayes).
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-entry text-bubble">
+                    <a class="blog-link" href="blog-pages/statistics/nonparametric-models.html">
+                        <div class="entry-title">
+                            <p>Discriminant Analysis</p>
+                        </div>
+                        <div class="entry-body">
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- PAGE BREAK.................................................................................... -->
+    <div class="page-list misc">
+    </div>
+    <!-- 
+        putting the script element in the head causes
+        the .js script to run BEFORE the DOM gets loaded.
+        This will cause querySelectorAll() to fail to find 
+        any matching elements and return an empty NodeList.
+    -->
+    <script src="javascript/selectTab.js"></script>
+</body>
+</html>

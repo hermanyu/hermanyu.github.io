@@ -13,6 +13,11 @@ body {
     background-color: rgb(233, 235, 238);
 }
 
+div.text-bubble {
+    background-color: white;
+    border-radius: 5px;
+}
+
 div.flex-container {
     display: flex;
     padding: 20px;
@@ -100,7 +105,6 @@ div.bio {
 }
 
 div.about-me, div.what-i-do, div.education, div.projects {
-    background-color: white;
     padding: 20px;
 }
 
