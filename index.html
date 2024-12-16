@@ -9,87 +9,42 @@
     </head>
     <body>
         <div class="flex-container">
-
-            <div class="profile-picture text-bubble">
-                <img id="picture" src="assets/profile_pic/pfp1_square.jpg" alt="Avatar">
-                <div class="links">
-                    <a id="github" href="https://github.com/hermanyu">Github</a>
-                    <a id="linkedin" href="https://www.linkedin.com/in/herman-g-yu/">LinkedIn</a>
-                    <a id="blog" href="blog/blog.html">Blog</a>
+            <div class="menu">
+                <div class="profile-picture">
+                    <img src="assets/profile_pic/pfp1_square.jpg">
                 </div>
+                <div class="tab-section">
+                    <div class="tab selected-tab" id="about-me">
+                        <p>About Me</p>
+                    </div>
+                    <div class="tab" id="blog">
+                        <p>Blog</p>
+                    </div>
+                    <div class="tab" id="projects">
+                        <p>Projects</p>
+                    </div>
+                    <div class="tab" id="resources">
+                        <p>Resources</p>
+                    </div>
+                </div>
+                
             </div>
-
-            <div class="text-body">
-                <div class="intro text-bubble">
-                    <div id="name">Herman Yu</div> 
-                    <div class="title-labels">
-                            <p>Data Science</p> 
-                            <p id="label-divider"> | </p> 
-                            <p>Programming</p>
-                            <p id="label-divider"> | </p> 
-                            <p>Machine Learning</p>
-                    </div>
+            <div class="main">
+                <div class="page selected-page" id="about-me">
+                    <p>ABOUT ME</p>
                 </div>
-
-                <div class="bio">
-                    <div class="about-me text-bubble">
-                        <h2 class="section-header">About Me</h2>
-                        <p>
-                            Professional data sciencist working in marketing effectiveness analytics
-                            with an educational background in mathematics. My
-                            passion projects are in recommender systems including 
-                            content-based recommendation using image recognition.
-                            Currently building a fullstack web application
-                            to deploy interactive recommender models.
-                        </p>
-                    </div> 
-                    
-                    <div class="what-i-do text-bubble">
-                        <h2 class="section-header">What I Do</h2>
-                        <p>
-                            Professionally, I build Media Mix Models (MMMs) to attribute 
-                            sales to marketing spend. This allows our clients to accurately measure ROI in their
-                            marketing investments and optimize marketing strategies. MMMs use econometric modeling
-                            and statistical inference to circumvent the issues of multi-touch tracking (or lack-thereof).
-                            I explain MMMs in more detail here.
-                        </p>
-                        <p>
-                            Recommender systems are my primary field of interst, which can be viewed 
-                            as "dual" to the concept of marketing. Where as image generation and large-language models,
-                            attempt to solve very awe-inspiring problems, recommender systems attempt solve very 
-                            relatable ones. How often have you been stuck on the question 
-                            "what should we do for dinner?" Recommender systems present a "blue collar" side of 
-                            machine learning, yet the engineering challenges are nuanced and complex.                   
-                        </p>
-                    </div>
-
-                    <div class="education text-bubble">
-                        <h2 class="section-header">Education</h2>
-                        <ul>
-                            <li> M.S. Mathematics - California State University, Long Beach</li>
-                            <li> B.A. Economics - University of California, Davis</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="projects text-bubble">
-                        <h2 class="section-header">Projects</h2>
-                        <ol>
-                            <li> 
-                                <a href="https://github.com/hermanyu/Recommenders" target="_blank">
-                                The Recommenders Armada 
-                                </a>
-                            </li>
-                            <li> 
-                                <a href="https://github.com/hermanyu/hm-recommender" target="_blank">
-                                The H&M Dress Finder 
-                                </a>
-                            </li>
-                            <li> Data Structures and Algorithms From Scratch in Java </li>
-                        </ol>
-                    </div>
+                <div class="page" id="blog">
+                    <p>BLOG</p>
+                </div>
+                <div class="page" id="projects">
+                    <p>PROJECTS</p>
+                </div>
+                <div class="page" id="resources">
+                    <p>RESOURCES</p>
                 </div>
             </div>
         </div>
+        <script src="javascript/index/selectTab.js"></script>
     </body>
 </html>
 

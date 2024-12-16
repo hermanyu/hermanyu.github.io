@@ -13,6 +13,10 @@ body {
     background-color: rgb(233, 235, 238);
 }
 
+/* div {
+    border: 2px solid red;
+} */
+
 div.text-bubble {
     background-color: white;
     border-radius: 5px;
@@ -20,94 +24,86 @@ div.text-bubble {
 
 div.flex-container {
     display: flex;
+    flex-direction: column;
     padding: 20px;
-    column-gap:10px;
+    align-items: center;
+}
+
+div.menu {
+    display: flex;
+    height: 100px;
+    flex: 1 1 auto;
+    width: 100%;
     justify-content: center;
+}
+
+div.main {
+    display: flex;
+    height: 500px;
+    width: 100%;
 }
 
 div.profile-picture {
-    border-radius: 50px 5px;
     width: 200px;
-    /* background-color: #1877F2; */
-    background-color: white;
     display: flex;
-    flex-direction:column;
     align-items: center;
-    row-gap:10px;
+    justify-content: center;
 }
 
 .profile-picture img{
-    width: 120px;
-    border: 2px solid #1877F2;
+    width: 100px;
     border-radius: 50%;
     margin: 20px;
+    border: 2px solid #444444;
 }
 
-div.links {
-    height: 100px;
-    width: 180px;
+div.tab-section {
     display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-.links a {
-    border: 2px solid #1877F2;
-    border-radius: 5px;
-    flex: auto;
-    display: flex; /* turn anchors into flexboxes to use justify-content and align items*/
     justify-content: center;
-    align-items: center;
-    font-size: 18pt;
-    color: white;
-    text-decoration: none;
-    background-color: #1877F2;
-    transition: box-shadow .3s;
-    float: left;
-}
-
-.links a:hover {
-    box-shadow: 0 0 10px rgba(66,66,66,.5);
-}
-
-div.text-body{
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-div.text-body div {
-    border-radius: 5px;
-}
-
-div.intro {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-div.intro #name {
-    font-size: 28pt;
-    font-weight: 500;
-}
-
-div.title-labels {
-    display: flex;
+    align-items:last baseline;
+    width: 60%;
     column-gap: 10px;
 }
 
-div.bio {
-    width: 600px;
+div.tab {
+    width: 200px;
+    height: 50px;
     display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 10px 0 0;
+    cursor: pointer;
+    background-color: white;
 }
 
-div.about-me, div.what-i-do, div.education, div.projects {
-    padding: 20px;
+div.tab.selected-tab {
+    background-color: #444444;
+    color: white;
+    border-color: #444444;
+    border-width: 5px;
+    box-shadow: 5px -5px 8px #686767;
 }
 
-.about-me p, .what-i-do p {
-    text-align: justify;
+div.tab p:hover {
+    text-decoration: underline;
+}
+
+div.tab > p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+div.tab.selected-tab > p {
+    font-weight: 900;
+}
+
+div.page {
+    height: 100%;
+    width: 100%;
+    background-color: #444444;
+    display: none;
+}
+
+div.selected-page {
+    display:flex;
 }
