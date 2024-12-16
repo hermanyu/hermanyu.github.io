@@ -23,48 +23,49 @@
         <div class="page-lists">
             <div class="page-list statistics selected-list">
                 <div class="list-entry text-bubble">
-                    <a class="blog-link" href="blog-pages/statistics/data-generation-processes.html">
+                    <a class="blog-link" href="blog-pages/statistics/statistical-models-and-dgps.html">
                         <div class="entry-title">
-                            <p>Data Generation Processes</p>
+                            <p>Statistical Models and DGPs</p>
                         </div>
                         <div class="entry-body">
                             <p>
-                                At its core, data science is just a collection of tools used to obtain information from data.
-                                This blog post will discuss the concept of a data generation process (DGP) and how to generate our 
-                                own synthetic data sets. The benefits of this discussion are two-fold: 1) it establishes a concrete 
-                                framework to think about statistics and data science and 2) it provides us with the tools necessary to
-                                create toy data sets (on which we can practice our fancy data science techniques).
+                                The most fundamental application of statistics is to use finite sample data to estimate some data generating process (DGP).
+                                If we want to understanding DGPs, we need to actually generate data ourselves. The topics in this section deal with various 
+                                probability models (how random variables are defined) and how those model generate finite sample data (statistical models). 
+                                Understanding such models has a very concrete application: engineering synthetic data sets. 
                             </p>
                         </div>
                     </a>
                 </div>
                 <div class="list-entry text-bubble">
-                    <a class="blog-link" href="blog-pages/statistics/parametric-models.html">
+                    <a class="blog-link" href="https://hermanyu.github.io/design-of-experiments/">
                         <div class="entry-title">
-                            <p>Parametric Models</p>
+                            <p>Design And Analysis of Experiments (DOE)</p>
                         </div>
                         <div class="entry-body">
                             <p>
-                                Statistics is about using observed data to make inferences on the data generation process. 
-                                The main challenge is that infinitely many data generation processes can give rise to the same data set.
-                                In order to make the problem more tractable, one approach is to limit the range of possibilities by 
-                                assuming the DGP has some specific parametric form.
+                                Typically, there is some real-world DGP, whose exact nature is unknown. 
+                                To understand this DGP, we will need to estimate the underlying causal relationships using finite sample data.
+                                The "gold standard" for estimating causality is a randomized controlled trial (RCT); RCTs are machines that can be tuned to 
+                                navigate various tradeoffs in a model: sample size vs power, number of causal relationships vs false positive rates, confounding variables vs model complexity, etc.
+                                Design of experiments is the study of how to engineer and analyze RCTs to navigate these tradeoffs.
                             </p>
                         </div>
                     </a>
                 </div>
                 <div class="list-entry text-bubble">
-                    <a class="blog-link" href="blog-pages/statistics/nonparametric-models.html">
+                    <a class="blog-link" href="blog-pages/statistics/forecasting.html">
                         <div class="entry-title">
-                            <p>Non-parametric Models</p>
+                            <p>Forecasting</p>
                         </div>
                         <div class="entry-body">
                             <p>
-                                Sometimes, we don't need to model the entire DGP, 
-                                but just need a very specific quantity that is derived from samples of the DGP (e.g. confidence intervals and p-values).
-                                Since our observed data is itself a sample of the DGP, it is sometimes possible to get estimates of our desired quantity 
-                                without assuming any specific parameteric form for the DGP.
-                            </p>
+                                <em>Time-series data</em> is data which is indexed by time. Samples from time-series data is almost never independent: the stock price at time 12:59 pm
+                                is correlated with the stock price at 1:00 pm. This property where data points are correlated based on recency is called <em>serial correlation</em>.
+                                Since serial correlation violates the independence assumption needed for traditional statistical methods, 
+                                a new theory is needed to estimate the DGP from a finite sample of time-series data. 
+                                Correlations in time might cause headaches for estimating the DGP, BUT there is a major benefit: 
+                                correlations between past vs future make it possible to <em>forecast</em> future values.
                         </div>
                     </a>
                 </div>

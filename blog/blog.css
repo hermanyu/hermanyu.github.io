@@ -48,6 +48,10 @@ div.header-tabs {
     column-gap:20px;
 }
 
+div.tab:hover {
+    cursor:pointer;
+}
+
 div.tab {
     display: flex;
     justify-content: center;
